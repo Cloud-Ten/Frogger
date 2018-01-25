@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * Write a description of class Road here.
  * 
@@ -36,7 +36,7 @@ public class Highway extends World
         else if(diff == 2)
         {
             theCar.setSpeed(4);
-            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, new Color(153, 153, 0));
+            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, new Color(0,153,0));
             addObject(level, 880, 30);
             TextBox difficulty = new TextBox( " Normal ", 40, true, Color.WHITE, new Color(153, 153, 0));
             addObject(difficulty, 75, 30);
@@ -44,7 +44,7 @@ public class Highway extends World
         else if(diff == 3)
         {
             theCar.setSpeed(5);
-            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, Color.RED );
+            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, new Color(0,153,0));
             addObject(level, 880, 30);
             TextBox difficulty = new TextBox( " Hard ", 40, true, Color.WHITE, Color.RED );
             addObject(difficulty, 55, 30);
@@ -52,10 +52,10 @@ public class Highway extends World
         else
         {
             theCar.setSpeed(7);
-            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.RED, Color.BLACK );
+            TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, new Color(0,153,0));
             addObject(level, 880, 30);
             TextBox difficulty = new TextBox( " Impossible ", 40, true, Color.RED, Color.BLACK );
-            addObject(difficulty, 105, 30);
+            addObject(difficulty, 100, 30);
         }
     }
 
@@ -67,12 +67,6 @@ public class Highway extends World
         getBackground().setColor(new Color(169,169,169));
         getBackground().fillRect( 0, getHeight() / 2 - 230, getWidth(), 200);
         getBackground().fillRect( 0, getHeight() / 2 + 30, getWidth(), 200);
-        
-        TextBox level = new TextBox( " Level: " + levelNum + " ", 40, true, Color.WHITE, new Color(0,153,0));
-        addObject(level, 880, 30);
-        
-        TextBox difficulty = new TextBox( " Easy ", 40, true, Color.WHITE, new Color(0,153,0));
-        addObject(difficulty, 55, 30);
 
         Greenfoot.start();
     }
@@ -82,7 +76,9 @@ public class Highway extends World
         theFrog = new Frog();
         addObject(theFrog, getWidth() / 2, 560);
         
-        //traffic going left
+        /**
+         * traffic going left
+         */
         for(int i = 0; i < carNum; i++)
         {
             //bottom
@@ -104,7 +100,9 @@ public class Highway extends World
             addObject(car, Greenfoot.getRandomNumber(1200) / 2, 370);
         }
         
-        //traffic going right
+        /**
+         * traffic going right
+         */
         for(int i = 0; i < carNum2; i++)
         {
             //bottom
@@ -132,7 +130,9 @@ public class Highway extends World
     
     private void remakeHighway()
     {
-        //traffic going left
+        /**
+         * traffic going left
+         */
         for(int i = 0; i < carNum; i++)
         {
             //bottom
@@ -154,7 +154,9 @@ public class Highway extends World
             addObject(car, Greenfoot.getRandomNumber(1200) / 2, 370);
         }
         
-        //traffic going right
+        /**
+         * traffic going right
+         */
         for(int i = 0; i < carNum2; i++)
         {
             //bottom
@@ -216,6 +218,5 @@ public class Highway extends World
             Greenfoot.delay(60);
             removeObject(one);
         }
-        
     }
 }

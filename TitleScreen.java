@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * FROGGER
  * 
@@ -9,7 +9,6 @@ import java.awt.*;
 public class TitleScreen extends World
 {
     private TextBox button;
-    private Title title;
     private TextBox button2;
     private TextBox button3;
     private TextBox button4;
@@ -89,8 +88,8 @@ public class TitleScreen extends World
         button = new TextBox(" Start ", 45, true, Color.WHITE, new Color(0,153,0));
         button2 = new TextBox(" Help ", 45, true, Color.WHITE, new Color(0,153,0));
         button3 = new TextBox(" Leaderboard ", 45, true, Color.WHITE, new Color(0,153,0));
-        button4 = new TextBox(" Changelog ", 35, true, Color.WHITE, new Color(0,153,0));
-        title = new Title();
+        button4 = new TextBox("   v1.1   ", 35, true, Color.WHITE, new Color(0,153,0));
+        TextBox title = new TextBox("   FROGGER   ", 105, true, Color.WHITE, new Color(0,153,0));
         
         addObject(title, getWidth() / 2, getHeight() / 2 - 150);
         addObject(button, getWidth() / 2 - 170, getHeight() / 2);

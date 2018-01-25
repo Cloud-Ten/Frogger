@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * Write a description of class HelpScreen here.
  * 
@@ -25,7 +25,7 @@ public class HelpScreen extends World
         getBackground().setColor(new Color(50,205,50));
         getBackground().fillRect( 0, 0, getWidth(), getHeight() );
         
-        TextBox textBox1 = new TextBox( " CONTROLS ", 50, true, Color.WHITE, Color.BLACK );
+        TextBox textBox1 = new TextBox( " CONTROLS ", 50, true, Color.WHITE, new Color(0, 153, 0) );
         addObject(textBox1, getWidth() / 2, getHeight() / 2 - 200);
         TextBox textBox2 = new TextBox( " W ", 40, true, Color.WHITE, new Color(0,153,0));
         addObject(textBox2, getWidth() / 2 - 90, getHeight() / 2 - 50);

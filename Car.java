@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Car extends Actor
 {
     private static int speed = 0;
-    
-    
+
     public Car()
     {
         getImage().scale(80, 40);

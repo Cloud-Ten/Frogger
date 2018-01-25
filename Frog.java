@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * Write a description of class Frog here.
  * 
@@ -8,7 +8,6 @@ import java.awt.*;
  */
 public class Frog extends Actor
 {
-    private static Car theCar;
     private String upKey;
     private String downKey;
     private String leftKey;

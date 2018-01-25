@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * Write a description of class TitleScreen here.
  * 
@@ -12,7 +12,6 @@ public class LevelSelect extends World
     private TextBox button2;
     private TextBox button3;
     private TextBox button4;
-    private Title title;
     private TextBox back;
     private int carNum = 5;
     private static Car theCar;
@@ -91,7 +90,7 @@ public class LevelSelect extends World
         button2 = new TextBox(" Normal ", 45, true, Color.WHITE, new Color(153, 153, 0));
         button3 = new TextBox(" Hard ", 45, true, Color.WHITE, Color.RED);
         button4 = new TextBox(" Impossible ", 45, true, Color.RED, Color.BLACK);
-        title = new Title();
+        TextBox title = new TextBox("   FROGGER   ", 105, true, Color.WHITE, new Color(0,153,0));
         back = new TextBox(" Back ", 45, true, Color.WHITE, Color.RED);
         
         addObject(title, getWidth() / 2, getHeight() / 2 - 150);

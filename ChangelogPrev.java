@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.*;
+import greenfoot.Color;
 /**
  * Write a description of class HelpScreen here.
  * 
@@ -25,7 +25,7 @@ public class ChangelogPrev extends World
         getBackground().setColor(new Color(50,205,50));
         getBackground().fillRect( 0, 0, getWidth(), getHeight() );
         
-        TextBox textBox1 = new TextBox( " CHANGELOG ", 50, true, Color.WHITE, Color.BLACK );
+        TextBox textBox1 = new TextBox( " CHANGELOG ", 50, true, Color.WHITE, new Color(0, 153, 0) );
         addObject(textBox1, getWidth() / 2, getHeight() / 2 - 200);
         TextBox subTitle = new TextBox( " Version: 1.0.6 ", 30, true, Color.WHITE, new Color(0,153,0));
         addObject(subTitle, getWidth() / 2, getHeight() / 2 - 150);
